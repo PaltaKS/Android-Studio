@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MiPrimeraAplicacionAndroid</string>
+    <string name="main_boton_1">Accion</string>
 </resources>

@@ -2,6 +2,10 @@ package com.example.miprimeraaplicacionandroid;
 
 import android.os.Bundle;
 import android.widget.TextView;
+import android.content.Intent;
+import android.view.View;
+
+
 
 //import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,7 +26,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         }); */
-        txtTitulo = findViewById(R.id.main_txtTitulo);
-        txtTitulo.setText("Este es un texto de ejemplo");
+        btnEnviar = findViewById(R.id.btnBotonMain);
+        txtTitulo = findViewById(R.id.txtTituloMain);
+        txtIngresar = findViewById(R.id.txtIngresarMain);
+    }
+    public void accionBoton(View view)
+    {
+        Intent intent = new Intent(MainActivity:this, Secundario.class);
+        startActivity(intent);
+        finish();
     }
 }
